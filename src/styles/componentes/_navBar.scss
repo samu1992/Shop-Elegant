@@ -1,0 +1,140 @@
+.container_nav{
+    top: 0;
+    position: fixed;
+    padding: 40px;
+    margin: 0px;
+    z-index: 10;
+    width: 100%;
+    @include centrar-between;
+    min-height: 100px;
+    transition: all 0.8s;
+
+    a{
+        text-decoration: none;
+        color: $tertiary-color;
+
+        &:hover{
+            color: $fifth-color;
+        }
+    }
+    p{
+        right: 25px;
+        font-size: 18px;
+        color: $tertiary-color;
+        padding: 5px;
+    }
+}
+
+
+.enlace-activo{
+    text-decoration: underline 3px;
+    color: $secondary-color;
+}
+.container_nav__body__links{
+    @include centrar;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 0px;
+    letter-spacing: 3px;
+    margin-left: 10px;
+
+    li{
+        margin-right: 25px;
+        padding: 3px;
+        list-style: none;
+        border-radius: 25px;
+        transition: all 0.4s;
+    }
+}
+
+
+.container_nav__body__cart{
+    font-size: 25px;
+    @include centrar;
+
+    .icon{
+        color: $tertiary-color;
+    }
+}
+
+
+#lines{
+    display: none;
+    font-size: 30px;
+    color: $tertiary-color;
+}
+.navbar--responsive{
+    display: none;
+}
+.scrolled{
+    display: flex;
+    width: 100%;
+    background-color: rgba(145, 95, 54, 0.7);
+
+    a{
+        color: $tertiary-color;
+    }
+}
+
+.contador {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    color: $fifth-color;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 750px){
+    .container_nav__body__links{
+        display: none;
+    }
+    .container_nav{
+        padding: 20px;
+    }
+    
+    .navbar--open{
+		position: fixed;
+		display: flex;
+        justify-content: top;
+        align-items: flex-end; ;
+        flex-direction: column;
+        width: 75%;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        gap: 20px;
+        padding: 25px;
+        list-style: none;
+        transition: all .7s;
+        background-color: rgba(39, 31, 31, 1);
+
+        h2{
+            color: $tertiary-color;
+            width: 100%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+	}
+
+    .container_links--responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 30px;
+        list-style: none;
+        color: $fifth-color;
+
+        a{
+            color: $tertiary-color;
+        }
+    }
+    
+    #lines{
+		display: inline-block;
+	}
+    
+}

@@ -1,0 +1,35 @@
+.container_Opiniones {
+    @include centrar;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 65px;
+
+    .opiniones {
+        @include centrar;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 45px;
+    }
+
+    h2 {
+        color: $sixth-color;
+        @include font-Abril;
+    }
+
+    p {
+        max-width: 650px;
+        text-align: center;
+        color: $sixth-color;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .container_Opiniones h2 {
+        font-size: 20px;
+
+        p {
+            font-size: 17px;
+        }
+    }
+}

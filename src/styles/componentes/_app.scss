@@ -1,0 +1,15 @@
+.container_shop{ 
+    @include reset-pm;
+    min-width: 100%;
+    min-height: 100vh; 
+    font-family: 'Inter', sans-serif;
+    background-color: $primary-color;
+    text-decoration: none;
+} 
+
+@media only screen and (max-width: 650px){
+    .container_shop{
+        min-width: 100%;
+        min-height: 100vh;
+    }
+}

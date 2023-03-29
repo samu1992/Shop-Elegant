@@ -1,0 +1,93 @@
+.container_Nosotros {
+    @include centrar;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 50px;
+    width: 100%;
+
+    h2 {
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+        color: $sixth-color;
+    }
+
+    p {
+        max-width: 550px;
+        color: $sixth-color;
+    }
+}
+
+.nosotros_Texto {
+    @include centrar;
+    flex-wrap: wrap;
+    gap: 45px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 25px;
+    flex-direction: row;
+
+    .p-1 {
+        font-size: 22px;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+}
+
+#img {
+    display: flex;
+    width: 500px;
+    overflow: hidden;
+
+    img {
+        width: 500px;
+        object-fit: cover;
+    }
+}
+
+.contenedor_Valores {
+    @include centrar;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .valores {
+        @include centrar;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px;
+        gap: 25px;
+        margin-bottom: 40px;
+
+        section {
+            @include centrar;
+            flex-direction: column;
+            gap: 40px;
+
+            div {
+                margin: 10px;
+                padding: 15px;
+                max-width: 580px;
+                border-radius: 10px;
+                @include shadow;
+
+
+                .valores div h4 {
+                    color: $sixth-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .p-1{
+        font-size: 19px;
+    }
+    #img{
+        width: 400px;
+        overflow: hidden;
+    }
+    #img img{
+        width: 400px;
+    }
+}

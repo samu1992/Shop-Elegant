@@ -1,0 +1,64 @@
+.container_Descuento {
+    @include centrar;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 350px;
+    padding: 25px;
+    flex-wrap: wrap;
+    background-color: $seventh-color;
+    margin-top: 25px;
+    border-radius: 15px;
+    gap: 30px;
+    margin-bottom: 40px;
+
+    .section-1 {
+        h2 {
+            font-size: 50px;
+            color: $sixth-color;
+        }
+    }
+}
+
+.section-2 {
+    display: flex;
+    gap: 30px;
+
+    input {
+        max-width: 350px;
+        height: 60px;
+        border-radius: 25px;
+        padding-left: 25px;
+        background-color: transparent;
+        border: 1px solid $sixth-color;
+    }
+
+    button {
+        padding: 15px;
+        border-radius: 25px;
+        background-color: transparent;
+        color: $sixth-color;
+        border: 1px solid $sixth-color;
+
+        &:hover {
+            background-color: $sixth-color;
+            color: $seventh-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .section-1 h2 {
+        font-size: 40px;
+    }
+
+    .section-2 {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .section-1 h2 {
+        font-size: 30px;
+    }
+}

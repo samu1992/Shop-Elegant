@@ -1,0 +1,31 @@
+.inicio_Button {
+    @include centrar;
+    gap: 15px;
+    @include font-Roboto;
+
+    .button-1 {
+        padding: 10px 15px 10px 15px;
+        background-color: transparent;
+        border-radius: 25px;
+        border: 1px solid $tertiary-color;
+        color: $tertiary-color;
+
+        &:hover {
+            background-color: $tertiary-color;
+            color: $secondary-color;
+        }
+    }
+
+    .button-2 {
+        padding: 10px 15px 10px 15px;
+        background-color: $tertiary-color;
+        border-radius: 25px;
+        border: 1px solid $tertiary-color;
+        color: #3d3e40;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $tertiary-color;
+        }
+    }
+}

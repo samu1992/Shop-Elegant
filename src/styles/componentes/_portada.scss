@@ -1,0 +1,52 @@
+.container_Inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../../public/images/inicio.jpg);
+
+    .inicio_title {
+        margin-top: 180px;
+        gap: 20px;
+        max-width: 500px;
+
+        h1 {
+            font-size: 60px;
+            color: $tertiary-color;
+            letter-spacing: 5px;
+        }
+
+        H2 {
+            color: $tertiary-color;
+            font-size: 40px;
+            letter-spacing: 3px;
+        }
+
+        p {
+            color: $secondary-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container_Inicio {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .inicio_title h1 {
+        font-size: 40px;
+
+        h2 {
+            font-size: 30px;
+        }
+
+    }
+}

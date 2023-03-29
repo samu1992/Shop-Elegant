@@ -1,0 +1,40 @@
+.cliente {
+    @include centrar;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    height: 380px;
+    padding: 10px;
+
+    .texto {
+        color: $sixth-color;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .cliente_Star {
+        @include centrar;
+        flex-direction: row;
+
+        i {
+            color: $secondary-color;
+            font-size: 24px;
+        }
+    }
+}
+
+.cliente_Avatar img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 380px) {
+    .cliente {
+        width: 300px;
+    }
+}

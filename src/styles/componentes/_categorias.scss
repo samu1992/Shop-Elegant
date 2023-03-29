@@ -1,0 +1,65 @@
+.container_Categoria {
+    @include centrar;
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+    width: 100%;
+    background-color: $seventh-color;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    a{
+        text-decoration: none;
+    }
+
+    h3 {
+        color: $sixth-color;
+        @include font-Abril;
+        letter-spacing: 3px;
+    }
+
+    div {
+        @include centrar;
+        flex-direction: row;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        .caballeros {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../public/images/caballero.jpg');
+            background-position: center;
+            background-size: cover;
+            transition: all 0.3s;
+        }
+
+        .damas {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../../../public/images/dama.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+.categoria{
+    @include centrar;
+    width: 400px;
+    height: 180px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    @include shadow;
+
+    &:hover{
+        transform: scale(0.9);
+    }
+
+    h2{
+        color: $primary-color;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    .categoria{
+        width: 300px;
+    }
+}

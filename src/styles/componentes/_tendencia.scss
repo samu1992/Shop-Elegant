@@ -1,0 +1,40 @@
+.container_Tendencias{
+    max-width: 100%;
+    padding: 25px;
+
+    img{
+        width: 300px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    h2{
+        color: $secondary-color;
+        text-align: center;
+        margin-bottom: 25px;
+        @include font-Abril;
+    }
+}
+
+.slick-track{
+    display: flex !important;
+    gap: 10px !important;
+}
+
+.slick-arrow{
+    display: none !important;
+}
+.slick-dots ::before{
+    font-size: 10px !important;
+    color: rgb(145, 95, 54) !important;
+}
+@media only screen and (max-width: 500px){
+    .container_Tendencias{
+        padding: 10px;
+
+        img{
+            height: 200px !important;
+        }
+    }
+}

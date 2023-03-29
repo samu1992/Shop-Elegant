@@ -1,0 +1,19 @@
+.container_amount {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    padding-left: 0px;
+
+    #amount {
+        margin: 7px;
+        margin-left: 0px;
+        background-color: $sixth-color;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $tertiary-color;
+        }
+    }
+}

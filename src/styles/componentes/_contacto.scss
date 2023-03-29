@@ -1,0 +1,93 @@
+.contacto{
+    @include centrar;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    h2{
+        color: $sixth-color;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+.contacto_Container{
+    @include centrar;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    @include shadow;
+
+    h4{
+        color: $sixth-color;
+        text-align: center;
+    }
+}
+
+.contacto_Form{
+    @include centrar;
+    flex-direction: column;
+    padding: 25px;
+    gap: 15px;
+    border-radius: 10px;
+    background-color: $fifth-color;
+
+    h4{
+        color: $sixth-color;
+    }
+
+    form{
+        @include centrar;
+        gap: 35px;
+        flex-direction: column;
+        padding: 25px;
+
+        input{
+            background-color: transparent;
+            border-radius: 25px;
+            width: 400px;
+            height: 60px;
+            padding: 25px;
+            border: 0.5px solid $secondary-color;
+        }
+    }
+
+    button{
+        padding: 10px 40px 10px 40px;
+        border-radius: 25px;
+        background-color: $secondary-color;
+        border: none;
+        color: $seventh-color;
+
+        &:hover{
+            background-color: $seventh-color;
+            color: $secondary-color;
+        }
+    }
+}
+
+.contacto_Datos i {
+    margin-right: 20px;
+}
+@media only screen and (max-width: 600px){
+    .contacto_Form form input{
+        width: 300px;
+    }
+    .contacto_Container{
+        width: 96%;
+    }
+    .contacto_Form{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .contacto_Form form input{
+        width: 250px;
+    }
+}
