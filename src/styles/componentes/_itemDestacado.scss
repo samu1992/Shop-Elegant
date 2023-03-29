@@ -1,7 +1,9 @@
 .main {
     @include centrar;
     flex-direction: column;
-    gap: 20px;
+    padding: 20px;
+    gap: 5px;
+    background-color: $seventh-color;
 
     .h3,
     .a {
@@ -12,7 +14,7 @@
     .main_Item {
         @include centrar;
         flex-direction: row;
-        gap: 15px;
+        gap: 10px;
         flex-wrap: wrap;
     }
 }

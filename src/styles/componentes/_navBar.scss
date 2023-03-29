@@ -6,8 +6,9 @@
     z-index: 10;
     width: 100%;
     @include centrar-between;
-    min-height: 100px;
+    height: 70px;
     transition: all 0.8s;
+    background-color: $sixth-color;
 
     a{
         text-decoration: none;
@@ -69,7 +70,7 @@
 .scrolled{
     display: flex;
     width: 100%;
-    background-color: rgba(145, 95, 54, 0.7);
+    background-color:$sixth-color;
 
     a{
         color: $tertiary-color;

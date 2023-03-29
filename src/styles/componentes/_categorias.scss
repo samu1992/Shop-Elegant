@@ -25,14 +25,14 @@
         flex-wrap: wrap;
 
         .caballeros {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../public/images/caballero.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../../images/caballero.jpg);
             background-position: center;
             background-size: cover;
             transition: all 0.3s;
         }
 
         .damas {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../../../public/images/dama.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../../../images/dama.jpg);
             background-position: center;
             background-size: cover;
         }
