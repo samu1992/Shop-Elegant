@@ -1,5 +1,5 @@
+import React from 'react';
 import Navbar from './componentes/NavBar/NavBar.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import MenuApi from './componentes/MenuApi/MenuApi.jsx';
 import Carrito from './componentes/Carrito/Carrito.jsx';
 import { BrowserRouter, Routes, Route} from "react-router-dom"
@@ -14,7 +14,7 @@ import Contacto from './componentes/Contacto/Contacto.jsx';
 
 function App() {
   return (
-    <main className="container_shop">
+    <main className="container_shop" data-testid="app-component">
       <CartProvider>
         <BrowserRouter>
           <Navbar />

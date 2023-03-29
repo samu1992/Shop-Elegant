@@ -1,4 +1,4 @@
-
+import React from 'react';
 import Sesion from '../Sesion/Sesion';
 
 const Portada = () => {

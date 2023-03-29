@@ -1,3 +1,4 @@
+import React from 'react';
 const Descuento = () => {
   return (
     <article className='container_Descuento'>

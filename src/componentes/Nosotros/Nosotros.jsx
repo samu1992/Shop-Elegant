@@ -1,7 +1,7 @@
-
+import React from 'react';
 const Nosotros = () => {
     return (
-        <main className='container_Nosotros'>
+        <main data-testid='nosotros' className='container_Nosotros'>
             <section className='nosotros_Texto'>
                 <div className='texto'>
                     <h2>Nosotros</h2>

@@ -1,3 +1,4 @@
+import React from 'react';
 import Contador from '../Contador/Contador';
 import { CartContext } from '../../Context/CartProvider';
 import { useState, useContext } from 'react';
@@ -26,7 +27,7 @@ const ItemDetalle = ({ detalleProduct }) => {
                         <Card.Subtitle>Tallas</Card.Subtitle>
                         <Talla/>
                         </div>
-                        <Card.Subtitle className='container_item__card__body__subtitle'>Precio:  ${detalleProduct.precio}</Card.Subtitle>
+                        <Card.Subtitle className='container_item__card__body__subtitle'>Precio:$ {detalleProduct.precio}</Card.Subtitle>
                         <h6> En Stock: {detalleProduct.stock}</h6>
                         <div>
                         <h6>Cantidad: {cantidad}</h6>

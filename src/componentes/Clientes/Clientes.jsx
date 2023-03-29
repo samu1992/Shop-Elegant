@@ -1,4 +1,4 @@
-
+import React from 'react';
 const Clientes = (props) => {
     return (
             <section className='cliente'>

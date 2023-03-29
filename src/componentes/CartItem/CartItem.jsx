@@ -1,4 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 import { CartContext } from '../../Context/CartProvider';
 import { useContext } from 'react';
 import {faTrash} from '@fortawesome/free-solid-svg-icons';

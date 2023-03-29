@@ -1,3 +1,4 @@
+import React from 'react';
 import Items from '../Items/Items';
 import Categorias from '../Categorias/Categorias';
 

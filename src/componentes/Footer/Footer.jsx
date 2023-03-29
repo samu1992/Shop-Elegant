@@ -1,6 +1,5 @@
+import React from 'react';
 
-//import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-//import {faBong} from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
   return (
     <footer className="container_footer__legal">

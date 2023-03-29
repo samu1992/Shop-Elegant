@@ -1,3 +1,4 @@
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'
@@ -17,8 +18,8 @@ function Navbar() {
         setEnlaceActivo(id);
     }
     const Contador = () => {
-        if (cart.length >= 1) {
-            return <p><span className="contador">{cart.length}</span></p>;
+        if (cart && cart.length >= 1) {
+            return <p><span data-testid="cart-count" className="contador">{cart.length}</span></p>;
         } else {
             return null;
         }
@@ -37,7 +38,7 @@ function Navbar() {
         };
     }, []);
     return (
-        <header className={`container_nav ${navbarClass}`}>
+        <header   className={`container_nav ${navbarClass}`}>
             <ul className='container_nav__body__links'>
                 <li id='inicio' className={enlaceActivo === 'inicio' ? 'enlace-activo' : ''} onClick={(evento) => manejarClicEnlace(evento, 'inicio')}><Link to="/">INICIO</Link></li>
                 <li id='productos' className={enlaceActivo === 'productos' ? 'enlace-activo' : ''} onClick={(evento) => manejarClicEnlace(evento, 'productos')}><Link to="/productos">Productos</Link></li>

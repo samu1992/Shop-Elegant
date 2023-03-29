@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from "react";
 import ItemDestacado from "../ItemDestacado/ItemDestacado";
 import {  useParams } from "react-router-dom";
