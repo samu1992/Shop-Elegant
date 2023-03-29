@@ -1,4 +1,4 @@
-![logo](https://github.com/samu1992/Elegant/blob/master/public/images/c.png)
+![logo](https://github.com/samu1992/Shop-Elegant/blob/master/public/images/c.png)
 ## Descripcion del Proyecto
 
 Ecommerce
