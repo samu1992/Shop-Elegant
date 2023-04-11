@@ -8,11 +8,13 @@
 
     div{
         @include centrar;
+        padding-top: 10px;
         width: 80px;
         height: 40px;
         border-radius: 5px;
         cursor: pointer;
         border: 0.3px solid #000000;
+
     }
 
     .highlighted {

@@ -50,6 +50,9 @@
 }
 
 @media only screen and (max-width: 750px) {
+    .container_Descuento{
+        gap: 15px;
+    }
     .section-1 h2 {
         font-size: 40px;
     }
@@ -68,12 +71,12 @@
 
 @media only screen and (max-width: 500px){
     .section-1 h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
 @media only screen and (max-width: 380px) {
     .section-1 h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
