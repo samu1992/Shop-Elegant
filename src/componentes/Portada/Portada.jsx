@@ -6,8 +6,6 @@ const Portada = () => {
             <section className='inicio_title'>
                 <h1>Elegant</h1>
                 <h2>Donde la moda y la elegancia se encuentran.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec ut elit eget velit posuere eleifend.</p>
             </section>
         </main>
     )

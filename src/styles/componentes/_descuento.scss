@@ -5,11 +5,13 @@
     height: 350px;
     padding: 25px;
     flex-wrap: wrap;
-    background-color: $seventh-color;
+    background-color: $fifth-color;
     margin-top: 25px;
     border-radius: 15px;
+    border: 0.3px solid $secondary-color;
     gap: 30px;
     margin-bottom: 40px;
+    @include shadow-2;
 
     .section-1 {
         h2 {

@@ -3,13 +3,14 @@
     justify-content: center;
     align-items: top;
     flex-direction: row;
-    background-color: $seventh-color;
+    background-color: $sixth-color;
     flex-wrap: wrap;
     min-height: 250px;
     width: 100%;
     bottom: 0px;
     gap: 100px;
     padding: 35px 100px 35px 100px;
+    margin-top: 50px;
 
     section {
         display: flex;
@@ -22,11 +23,11 @@
 
     h3 {
         font-weight: bold;
-        color: $sixth-color;
+        color: $seventh-color;
     }
 
     ul {
-        color: $sixth-color;
+        color: $seventh-color;
         gap: 15px;
         list-style: none;
         padding: 0;
@@ -42,12 +43,12 @@
 
     p {
         @include reset-pm;
-        color: $sixth-color;
+        color: $seventh-color;
     }
 
     a {
         text-decoration: none;
-        color: $sixth-color;
+        color: $seventh-color;
 
         &:hover {
             color: $secondary-color;
@@ -65,7 +66,7 @@
 
         a {
             font-size: 25px;
-            color: $sixth-color;
+            color: $seventh-color;
         }
     }
 }
