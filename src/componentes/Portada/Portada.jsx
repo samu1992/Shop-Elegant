@@ -1,5 +1,4 @@
 import React from 'react';
-import Sesion from '../Sesion/Sesion';
 
 const Portada = () => {
     return (
@@ -10,7 +9,6 @@ const Portada = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Donec ut elit eget velit posuere eleifend.</p>
             </section>
-            <Sesion/>
         </main>
     )
 }

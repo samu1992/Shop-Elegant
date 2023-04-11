@@ -4,11 +4,12 @@
     @include font-Roboto;
 
     .button-1 {
-        padding: 10px 15px 10px 15px;
+        padding: 5px 7px 5px 7px;
         background-color: transparent;
-        border-radius: 25px;
+        border-radius: 4px;
         border: 1px solid $tertiary-color;
         color: $tertiary-color;
+        font-size: 13px;
 
         &:hover {
             background-color: $tertiary-color;
@@ -17,11 +18,12 @@
     }
 
     .button-2 {
-        padding: 10px 15px 10px 15px;
+        padding: 5px 7px 5px 7px;
         background-color: $tertiary-color;
-        border-radius: 25px;
+        border-radius: 4px;
         border: 1px solid $tertiary-color;
         color: #3d3e40;
+        font-size: 13px;
 
         &:hover {
             background-color: $secondary-color;

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react';
 import { CartContext } from '../../Context/CartProvider';
 import { useState, useEffect } from 'react';
+import Sesion from '../Sesion/Sesion';
 
 
 function Navbar() {
@@ -41,7 +42,11 @@ function Navbar() {
         <header   className={`container_nav ${navbarClass}`}>
             <ul className='container_nav__body__links'>
                 <li id='inicio' className={enlaceActivo === 'inicio' ? 'enlace-activo' : ''} onClick={(evento) => manejarClicEnlace(evento, 'inicio')}><Link to="/">INICIO</Link></li>
-                <li id='productos' className={enlaceActivo === 'productos' ? 'enlace-activo' : ''} onClick={(evento) => manejarClicEnlace(evento, 'productos')}><Link to="/productos">Productos</Link></li>
+                <li id='productos' className={enlaceActivo === 'productos' ? 'enlace-activo' : ''} onClick={(evento) => manejarClicEnlace(evento, 'productos')}><Link to="/productos">Productos</Link><i className="fa fa-chevron-down"></i></li>
+                <div className='menu_secondary' id='categoria'>
+                    <Link to='/categoria/mujer' className='categoria-a'>Damas</Link>
+                    <Link to='./categoria/hombre' className='categoria-a'>Caballeros</Link>
+                </div>
                 <li id='contacto' className={enlaceActivo === 'contacto' ? 'enlace-activo' : ''} onClick={(evento) => manejarClicEnlace(evento, 'contacto')}><Link to="/contacto">Contacto</Link></li>
                 <li id='nosotros' className={enlaceActivo === 'nosotros' ? 'enlace-activo' : ''} onClick={(evento) => manejarClicEnlace(evento, 'nosotros')}><Link to="/nosotros">Nosotros</Link></li>
             </ul>
@@ -55,10 +60,13 @@ function Navbar() {
                     <li id='nosotros' className={enlaceActivo === 'nosotros' ? 'enlace-activo' : ''} onClick={(evento) => manejarClicEnlace(evento, 'nosotros')}><Link to="/nosotros">Nosotros</Link></li>
                 </ul>
             </nav>
+            <div className='sesion_container'>
+            <Sesion/>
             <section className='container_nav__body__cart'>
                 <Link className='links' to="/Carrito"><FontAwesomeIcon className='icon' icon={faCartShopping} /></Link>
                 {Contador()}
             </section>
+            </div>
         </header>
     )
 };
