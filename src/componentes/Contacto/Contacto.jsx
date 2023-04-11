@@ -18,8 +18,8 @@ return (
             <div className='contacto_Datos'>
                 <h4>Informacion de Contacto</h4>
                 <p><i className="fa fa-phone"></i>  +54 1131987501</p>
-                <p><i className="fa fa-location-dot"></i>  Elegant@gmail.com</p>
-                <p><i className="fa fa-envelope"></i>  location</p>
+                <p><i className="fa fa-location-dot"></i>  Location</p>
+                <p><i className="fa fa-envelope"></i>  Elegant@gmail.com</p>
             </div>
         </section>
     </main>
