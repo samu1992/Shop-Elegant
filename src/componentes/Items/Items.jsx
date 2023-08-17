@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card'
 import  Button  from 'react-bootstrap/Button';
 
-
-
-
 function Items({ productos }) {
     return (
         <main className='container_list'>
